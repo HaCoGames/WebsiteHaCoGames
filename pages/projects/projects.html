@@ -31,8 +31,25 @@
     <div id="about">
         <div class="text">
             <h1>Projects</h1>
-            <p>GitHub <a href="https://github.com/HaCoGames">HaCoGames</a> </p>
+            <!--<p>GitHub <a href="https://github.com/HaCoGames">HaCoGames</a> </p>-->
+            <md-block id="md_text">
+            </md-block>
         </div>
     </div>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <script>
+      let element = document.getElementById("md_text");
+      let string = "";
+
+      string+="## Git Repositories:  \n";
+      string+="### GitHub:  \n";
+
+      fetch('https://api.github.com/users/HaCoGames/repos')
+        .then(async (res) => console.log(string+=await res.json()))
+
+      string+="### GitLab:  \n";
+
+      element.innerHTML=string;
+    </script>
 </body>
 </html>
