@@ -43,7 +43,7 @@
       let string = "";
 
       string+="## Git Repositories:  \n";
-      string+="### GitHub:  \n";
+      string+="### GitHub:  [HaCoGames](https://github.com/HaCoGames/)\n";
 
       fetch('https://api.github.com/users/HaCoGames/repos')
         .then(async (res) => console.log(string+=await res.json()))
