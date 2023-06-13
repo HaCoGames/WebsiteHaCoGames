@@ -12,16 +12,16 @@ This algorithm calculates the value of π using the following principle:
 
 ```python	
 def calculate_pi(iterations):
-pi = 0
-sign = 1
+    pi = 0
+    sign = 1
 
-for i in range(iterations):
-    denominator = 2 * i + 1
-    term = sign / denominator
-    pi += term
-    sign *= -1
+    for i in range(iterations):
+        denominator = 2 * i + 1
+        term = sign / denominator
+        pi += term
+        sign *= -1
 
-return 4 * pi
+    return 4 * pi
 ```
 
 ### JS:

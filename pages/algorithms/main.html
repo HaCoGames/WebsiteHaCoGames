@@ -12,7 +12,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../../css/main.css">
-    <title>Projects</title>
+    <title>Algorithms</title>
 </head>
 <body>
     <nav class="navbar navbar-inverse">
@@ -30,27 +30,12 @@
     </nav>
     <div id="about">
         <div class="text">
-            <h1>Projects</h1>
+            <h1>Algorithms</h1>
             <!--<p>GitHub <a href="https://github.com/HaCoGames">HaCoGames</a> </p>-->
-            <p> <a href="../algorithms/main.html">Algorithms</a> </p>
             <md-block id="md_text">
+                
             </md-block>
         </div>
     </div>
-    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
-    <script>
-      let element = document.getElementById("md_text");
-      let string = "";
-
-      string+="## Git Repositories:  \n";
-      string+="### GitHub:  [HaCoGames](https://github.com/HaCoGames/)\n";
-
-      fetch('https://api.github.com/users/HaCoGames/repos')
-        .then(async (res) => console.log(string+=await res.json()))
-
-      string+="### GitLab:  \n";
-
-      element.innerHTML=string;
-    </script>
 </body>
 </html>
