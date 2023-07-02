@@ -1,0 +1,36 @@
+body {
+    background-color: #36393F;
+    color: #FFF;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    .center {
+        width: 100%;
+    }
+}
+
+footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30vh;
+    position: relative;
+    bottom: 0px;
+}
+
+.navIMG {
+    border-radius: 50%;
+    border: 3px solid lightgray;
+}
+
+a {
+    color: lightgray;
+}
