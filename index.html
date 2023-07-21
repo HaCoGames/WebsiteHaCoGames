@@ -5,72 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="./css/master.css">
   <link rel="stylesheet" href="./css/standard_layout.css">
+  <link rel="stylesheet" href="./css/master.css">
   <title>Home | Peter Hafner</title>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="./favicon.png" alt="Logo" width="50" class="navIMG">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pages/services.html">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-        <form class="d-flex ms-auto">
-          <input class="form-control me-2" type="search" placeholder="Does nothing yet." aria-label="Search">
-          <button class="btn btn-outline-light" type="submit">Search</button>
-        </form>
+  <main>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./favicon.png" alt="Logo" width="50" class="navIMG">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/services.html">Services</a>
+            </li>
+          </ul>
+          <form class="d-flex ms-auto">
+            <input class="form-control me-2" type="search" placeholder="Does nothing yet." aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
 
-  <div class="main-content">
-    <div class="full_name center">
-      <h1>Peter Hafner</h1>
-    </div>
-    
-    <div class="center content">
-      <div class="circle_image">
-        <img src="./favicon.png" alt="Peter Hafner's profile picture">
+    <div class="main-content">
+      <div class="full_name center">
+        <h1>Peter Hafner</h1>
       </div>
-    
-      <div class="alternative_text">
-        <ul>
-          <li>I am currently studying Computer Science at HTL-Villach.</li>
-          <li>I am learning Python, Java, and JavaScript.</li>
-          <li>My primary focus is on Python and JavaScript.</li>
-          <li>In addition, I have knowledge in script languages such as Markdown, HTML, CSS, SQL, PL-SQL and I am currently learning TeX.</li>
-        </ul>
+      
+      <div class="center content">
+        <div class="circle_image">
+          <img src="./favicon.png" alt="Peter Hafner's profile picture">
+        </div>
+      
+        <div class="alternative_text">
+          <ul>
+            <li>I am currently studying Computer Science at HTL-Villach.</li>
+            <li>I am learning Python, Java, and JavaScript.</li>
+            <li>My primary focus is on Python and JavaScript.</li>
+            <li>In addition, I have knowledge in script languages such as Markdown, HTML, CSS, SQL, PL-SQL and I am currently learning TeX.</li>
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
+  </main>
   
   <footer class="bg-dark text-light py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
           <h3>About Me</h3>
-          <p>There is not much to say. My name is Peter Hafner, I am 17 years old and I want to be a very good programmer and penetrationtester, but there is still a long way to go... If you ever need something do not hesetate to contact me :)</p>
+          <p>There is not much to say. My name is Peter Hafner, I am <script>document.write(new Date().getFullYear()-2006)</script> years old and I want to be a very good programmer and penetrationtester, but there is still a long way to go... If you ever need something do not hesetate to contact me :)</p>
         </div>
         <div class="col-md-6">
           <h3>Contact Me</h3>
@@ -81,7 +77,7 @@
       </div>
     </div>
     <div class="text-center mt-4">
-      <p>&copy; 2023 hafnerp.dev. All rights reserved.</p>
+      <p>&copy; <script>document.write(new Date().getFullYear())</script> hafnerp.dev. All rights reserved.</p>
     </div>
   </footer>
   
