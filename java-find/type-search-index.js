@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"Alle Klassen und Schnittstellen","u":"allclasses-index.html"},{"p":"dev.hafnerp","l":"Main"},{"p":"dev.hafnerp","l":"SearchA"}];updateSearchResults();
